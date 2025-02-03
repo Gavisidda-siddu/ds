@@ -94,6 +94,10 @@ void inpos(char infix[],char pofix[]){
         }
 
     }
+    while (opr.top != -1) {
+        pofix[j++] = pop1(&opr);
+    }
+    pofix[j] = '\0';
 }
 
 //evaluation of postfix expression
