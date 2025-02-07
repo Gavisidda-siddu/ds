@@ -265,3 +265,42 @@ void maxele(NODE R) {
     else
         printf("Maximum is %d and its parent root is %d\n", TP->info, PN->info);
 }
+
+/*
+void EnQ(QUE *pq, NODE item)
+{
+  // check for Full 
+  pq->items[++pq->r]=item;
+}
+
+ NODE DQ(QUE *pq)
+{   NODE item;
+  // check for empty
+   
+  item=pq->items[pq->f];
+  pq->f++;
+   return item;
+} 
+void BFS(NODE R)
+  {
+     QUE Q;
+       NODE TN;
+       Q.f=0; Q.r=-1;
+
+    if(R==NULL)
+     {
+        printf("\ntree is empty\n"); return;
+     }
+    printf("\nBFS Traversal:\n");   
+  EnQ(&Q,R);
+  while(Q.f<=Q.r)
+   {
+     TN=DQ(&Q);
+     printf("%d   ",TN->data);
+     if(TN->LL!=NULL)
+      EnQ(&Q,TN->LL);
+     if(TN->RL!=NULL)
+      EnQ(&Q,TN->RL); 
+   }
+}
+*/
